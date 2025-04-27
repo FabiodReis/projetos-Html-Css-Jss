@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="../Formularios/style.css">
+</head>
+<body>
+<!-- 1- formulario -->
+    <!-- 2- Atributos -->
+<h2>Formularios HTML</h2>
+<form action="register.php" method="get">
+    <div>
+        <label for="">Nome</label>
+        <input type="text">
+    </div>
+        <!-- 3/4- atributo name + atributo label-->
+            <div>
+            <label for="age">Idade</label>
+            <input type="text" name="age">
+            </div>
+            <!-- 6- Select -->
+            <div>
+            <label for="job"> Selecione sua profissão</label>
+            <select name="job">
+                <option value="programador">Programador</option>
+                <option value="tester">Tester/QA</option>
+                <option value="devops">DecOps</option>
+            </select>
+            </div>
+            <!-- 7 Atributo selected-->
+            <!-- Colocar determinada palavra dentro da caixa de seleção -->
+            <div>
+            <label for="contract">Voce leu os termos do contrato?</label>
+            <select name="contract">
+                <option value="sim">Sim</option>
+                <option value="nao" selected>Não</option>
+            </select>
+            </div>
+            <!-- 8 multiplas opcões -->
+            <div>
+                <label for="intems">Selecione os itens desejados</label>
+                <select name="items" multiple >
+                    <option value="pera">pera</option>
+                    <option value="feijao">Feijão</option>
+                    <option value="arroz">Arroz</option>
+                    <option value="arroz">Arroz</option>
+                    <option value="milho">Milho</option>
+                </select>
+            </div>
+            <!-- 9 textarea -->
+             <!-- Tag de formulario usada para textos longos -->
+             <div>
+                <label for="comment">Escreve abaixou o que vc achou do post:</label>
+                <textarea name="comment"></textarea>
+
+             </div>
+            <!-- 5- Envio de for(usasse o type "submit") -->
+            <input type="submit" value="Enviar">
+
+</form>
+    
+</body>
+</html>
